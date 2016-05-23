@@ -4,17 +4,10 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require("gulp-rename");
 
-gulp.task('uglify', function() {
-  return gulp.src('src/index.js')
+gulp.task('default', function() {
+  return gulp.src('index.js')
     .pipe(uglify())
-    .pipe(gulp.dest('dist'));
-});
-
-gulp.task('rename', ['uglify'], function() {
-  return gulp.src('dist/index.js')
     .pipe(rename('index.min.js'))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('./'));
 });
-
-gulp.task('default', ['rename']);
 

@@ -10,7 +10,7 @@
     "placeholder"
   ],
   "main": [
-    "dist/index.min.js"
+    "index.min.js"
   ],
   "bugs": "https://github.com/yanzhihong23/img-http-src/issues",
   "license" : "MIT",
