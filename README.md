@@ -1,4 +1,4 @@
-# angular-img-placeholder
+# img-http-src
 Set placeholder image path(if there is), then fetch image using `$http` service, set image path again when http response success.
 
 
@@ -7,9 +7,9 @@ Set placeholder image path(if there is), then fetch image using `$http` service,
 - install from bower  
 
 	~~~shell
-	bower install angular-img-placeholder --save
+	bower install img-http-src --save
 	~~~
-- include module `angular.img.placeholder`
+- include module `imgHttpSrc`
 - directive usage in html
 
 	~~~javascript
