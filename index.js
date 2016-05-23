@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('angular.img.placeholder')
+    .module('angular.img.placeholder', [])
     .directive('httpSrc', ['$http', function($http) {
       var directive = {
         restrict: 'A',
