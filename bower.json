@@ -1,0 +1,31 @@
+{
+  "name": "angular-img-placeholder",
+  "version": "0.1.0",
+  "description": "ng-src replacement",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "ng-src",
+    "http-src",
+    "placeholder"
+  ],
+  "main": [
+    "index.js"
+  ],
+  "bugs": "https://github.com/yanzhihong23/angular-img-placholder/issues",
+  "license" : "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/yanzhihong23/angular-img-placholder"
+  },
+  "author": {
+    "name" : "Hom Yan",
+    "email" : "yanzhihong23@qq.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "angular": ">=1.4.0"
+  }
+}
