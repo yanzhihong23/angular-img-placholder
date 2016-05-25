@@ -11,7 +11,14 @@ Set placeholder image path(if there is), then fetch image using `$http` service,
 	~~~
 - include module `imgHttpSrc`
 - directive usage in html
-
+	
+	>$http
+	
 	~~~javascript
 	<img http-src="imgPath" placeholder="phPath" alt="img">
+	~~~
+	>dataUrl
+	
+	~~~javascript
+	<img data-src="imgPath" placeholder="phPath" alt="img">
 	~~~
