@@ -33,7 +33,7 @@
 
         return directive;
       }])
-      .directive('dataSrc', function() {
+      .directive('dataurlSrc', function() {
         var directive = {
           restrict: 'A',
           link: function(scope, element, attrs) {
@@ -41,7 +41,7 @@
               attrs.$set('src', attrs.placeholder);
             }
 
-            attrs.$observe('httpSrc', function(url) {
+            attrs.$observe('dataurlSrc', function(url) {
               if (!url) return;
 
               var img = new Image();

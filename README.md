@@ -20,5 +20,5 @@ Set placeholder image path(if there is), then fetch image using `$http` service,
 	>dataUrl
 	
 	~~~javascript
-	<img data-src="imgPath" placeholder="phPath" alt="img">
+	<img dataurl-src="imgPath" placeholder="phPath" alt="img">
 	~~~
