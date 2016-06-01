@@ -45,6 +45,7 @@
               if (!url) return;
 
               var img = new Image();
+              img.crossOrigin = '*';
               img.onload = function() {
                 var canvas = document.createElement('canvas'),
                   ctx = canvas.getContext('2d'),
