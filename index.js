@@ -33,7 +33,7 @@
 
         return directive;
       }])
-      .directive('dataurlSrc', function() {
+      .directive('dataurlSrc', ['$location', function($location) {
         var directive = {
           restrict: 'A',
           link: function(scope, element, attrs) {
@@ -41,8 +41,15 @@
               attrs.$set('src', attrs.placeholder);
             }
 
+            var reg = new RegExp($location.host);
+
             attrs.$observe('dataurlSrc', function(url) {
               if (!url) return;
+
+              if(!reg.test(url)) {
+                attrs.$set('src', url);
+                return;
+              }
 
               var img = new Image();
               img.crossOrigin = '*';
@@ -66,5 +73,5 @@
         };
 
         return directive;
-      });
+      }]);
 })();

@@ -1,6 +1,6 @@
 {
   "name": "img-http-src",
-  "version": "0.2.2",
+  "version": "0.2.4",
   "description": "ng-src replacement",
   "keywords": [
     "angular",
